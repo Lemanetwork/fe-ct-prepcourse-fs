@@ -125,15 +125,13 @@ function buscoInterseccion(array1, array2) {
   // Si no tienen elementos en común, retornar un arreglo vacío.
   // [PISTA]: los arreglos no necesariamente tienen la misma longitud.
   // Tu código:
-  var indice = 0;
   var elementosEnComun = [];
   for (var i = 0; i < array1.length; i++) {
     for (var i2 = 0; i2 < array2.length; i2++) {
-      if (indice < array1.length && array1[indice] === array2[i2]) {
-        elementosEnComun.push(array1[indice]);
+      if (array1[i] === array2[i2]) {
+        elementosEnComun.push(array1[i]);
       }
     }
-    indice++;
   }
   return elementosEnComun;
 }
